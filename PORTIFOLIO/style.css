@@ -1,0 +1,36 @@
+
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Container que alinha a imagem e o texto lado a lado */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza o conteúdo */
+    width: 80%; /* Define a largura do container */
+    max-width: 900px; /* Define um limite de tamanho */
+    gap: 20px; /* Espaço entre a imagem e o texto */
+    margin-top: 20px;
+}
+
+/* Ajustando o tamanho da imagem */
+.container img {
+    width: 40%; /* Define a largura da imagem */
+    max-width: 300px; /* Limita o tamanho da imagem */
+    height: auto; /* Mantém a proporção original */
+    border-radius: 10px;
+}
+
+/* Ajustando o texto para ocupar o restante do espaço */
+.container .texto {
+    width: 60%; /* Define a largura do texto */
+    text-align: left; /* Mantém alinhado à esquerda */
+    font-size: 18px;
+}
