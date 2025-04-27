@@ -24,30 +24,46 @@
                     <img src="imagem/logo.png" width="120px" alt="logo">
                 </a>
             </div><!--logo-->
-            <nav>
+            <nav class="menu-desktop">
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Habilidades</a></li>
-                    <li><a href="#">Projetos</a></li>
-                    <li><a href="#">Experiências</a></li>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
                 </ul>
             </nav>
             <div class="vm-contato">
-                <a href="#">
+                <a href="#contato">
                     <button>Contato</button>
                 </a>
             </div>
             <button id="btAlterarTema" class="toggle-btn">
                 <span class="icon">☀️</span>
             </button>
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x"></i>
+                </div><!--btn-fechar-->
+                <nav>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#habilidade">Habilidades</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </div><!--menu-mobile-->
+            <div class="overlay-menu" id="overlay-menu"></div>
         </div><!--interface-->
     </header>
     <main>
-        <section class="topo-site">
+        <section id="incio" class="topo-site">
             <div class="interface">
                 <div class="flex">
                     <div class="txt-topo-site">
-                        <h1>Meu </h1>
+                        <h1 class="titulo">MUITO PRAZER <span>SOU VICTOR MARTINS,</span></h1>
                         <p>
                             Tenho 27 anos, sou formado em Engenharia Civil pela Universidade Paranaense (UNIPAR) 
                             e atualmente curso Engenharia de Software no Instituto Federal do Paraná (IFPR). 
@@ -56,17 +72,17 @@
                             na elaboração de projetos na área de Engenharia Civil. Tenho me aprofundado em linguagens como Java, Python, C++, Flutter e HTML,
                             além de atuar em projetos acadêmicos voltados à construção de softwares completos, da análise à implementação. 
                             Sou movido por desafios, aprendizado constante e pelo desejo de criar soluções que realmente façam a diferença.
-                          </p>
+                        </p>
                          
                     </div><!--txt-topo-site-->
                     <div class="img-topo-site">
-                        <img  src="imagem/foto-sobre-mim.jpeg" width="450px" alt="Victor"/>
+                        <img src="imagem/foto-sobre-mim.jpeg" width="450px" alt="Victor"/>
                     </div><!--img-topo-site-->
                 </div><!--flex-->
             </div><!--interface-->
         </section><!--topo-site-->
 
-        <section class="habilidades">
+        <section id="habilidades" class="habilidades">
             <div class="interface">
                 <h2 class="titulo">MINHAS <span>HABILIDADES.</span></h2>
                 <div class="flex">
@@ -74,8 +90,8 @@
                         <span class="material-symbols-outlined">engineering</span>
                         <h3>Engenheiro Civil</h3>
                         <p>Tenho experiência na elaboração e leitura de projetos estruturais, arquitetônicos, elétricos, hidráulicos, 
-                            de prevenção e combate a incêndios, drenagem urbana, rede de coleta de esgoto e rede de distribuição de água, c
-                            om domínio de ferramentas como AutoCAD, Revit, Excel, Eberick e QiBuilder. 
+                            de prevenção e combate a incêndios, drenagem urbana, rede de coleta de esgoto e rede de distribuição de água, 
+                            com domínio de ferramentas como AutoCAD, Revit, Excel, Eberick e QiBuilder. 
                             Atuo com orçamentos, levantamento de quantitativos, compatibilização de projetos e aplicação de normas técnicas, 
                             sempre buscando eficiência, precisão e qualidade nos processos da Engenharia Civil.</p>
                     </div><!--habilidades.box-->
@@ -91,25 +107,62 @@
                 </div><!--flex-->
             </div><!--interface-->
         </section><!--Experiencias-->
-        <section class="projetos">
+        <section id="projetos" class="projetos">
             <div class="interface">
+                <h2 class="titulo">MEUS <span>PROJETOS.</span></h2>
                 <div class="flex">
-                    <h2 class="titulo">MEUS <span>PROJETOS.</span></h2>
                     <div class="projetos-box">
-                        <img src="" alt="">
-                        <h3>projetos</h3>
-                        <p>latiuaoiosjd</p>
+                        <img src="imagem/projeto-prefeitura.png" alt="prefeitura">
+                        <p>Projeto de estrutura de concreto armado desenvolvido para Prefeitura de Porto Rico.</p>
+                    </div><!--projetos-box-->
+                    <div class="projetos-box">
+                        <img src="imagem/projeto-barraco-prats.jpeg" alt="prats">
+                        <p>Projeto de estrutura metálica de um barracão desenvolvido para a empresa Prats.</p>
+                    </div><!--projetos-box-->
+                    <div class="projetos-box">
+                        <img src="imagem/projeto-refeitorio.png" alt="refeitorio">
+                        <p>Projeto de estrutura de concreto armado e estrutura metálica desenvolvido para Prefeitura de Terra Rica.</p>
                     </div><!--projetos-box-->
                 </div><!--flex-->
             </div><!--interface-->
-
         </section><!--Projetos-->
-        
-       
-        <div>
-            
-        </div>
+        <section id="contato" class="contatos">
+            <div class="interface">
+                <h2 class="titulo">ENTRE EM <span>CONTATO.</span></h2>
+                <div class="flex">
+                    <form action="">
+                        <input type="text" name="" id="" placeholder="Seu nome completo:" required>
+                        <input type="text" name="" id="" placeholder="Seu e-mail:" required>
+                        <input type="text" name="" id="" placeholder="Seu telefone:" required>
+                        <textarea name="" id="" placeholder="Descrição:" required></textarea>
+                        <div class="btn-enviar">
+                            <input type="submit" value="ENVIAR">
+                        </div>
+                    </form>
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--Contato-->
     </main>
-    <script src="script.js"></script>
+
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="logo-footer">
+                    <img src="imagem/logo.png" alt="logo">
+                </div>
+                <div class="btn-social">
+                    <a href="#" data-tooltip="GitHub"><button><i class="bi bi-github"></i></button></a>
+                    <a href="#" data-tooltip="LinkedIn"><button><i class="bi bi-linkedin"></i></button></a>
+                    <a href="#" data-tooltip="E-mail"><button><i class="bi bi-envelope"></i></button></a>
+                    <a href="#" data-tooltip="Instagram"><button><i class="bi bi-instagram"></i></button></a>
+                    <a href="#" data-tooltip="WhatsApp"><button><i class="bi bi-whatsapp"></i></button></a>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    <button id="btn-topo" class="btn-topo"><i class="bi bi-arrow-up"></i></button>
+
+    <script src="script.js" defer></script>
 </body>
 </html>
